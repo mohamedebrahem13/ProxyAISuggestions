@@ -46,7 +46,7 @@ ProxyAISuggestions
 │   └── MealViewModel.java      # ViewModel to fetch meals from DB
 ```
 ## proxy ai 
-you must ceate account and get the api key then add the plugin to android studio and use the key 
+you must create an account and get the api key then add the plugin to android studio and use the key 
 
 ## 🧠 AI Prompt Example
 
