@@ -5,6 +5,8 @@ import android.content.Context;
 
 import androidx.room.Room;
 
+import com.example.proxyaisuggestions.data.MealRepository;
+import com.example.proxyaisuggestions.data.MealRepositoryImpl;
 import com.example.proxyaisuggestions.data.db.MealDao;
 import com.example.proxyaisuggestions.data.db.MealDatabase;
 import com.example.proxyaisuggestions.data.db.MealDatabaseCallback;
@@ -25,7 +27,7 @@ public class LocalModule {
     @Singleton
     public MealDatabase provideMealDatabase(@ApplicationContext Context context, MealDatabaseCallback callback) {
         return Room.databaseBuilder(context, MealDatabase.class, "meal_database")
-                .fallbackToDestructiveMigration()
+                .fallbackToDestructiveMigration(false)
                 .addCallback(callback)
                 .build();
     }

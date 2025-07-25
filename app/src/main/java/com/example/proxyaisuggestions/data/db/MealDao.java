@@ -30,7 +30,8 @@ public interface MealDao {
 
     @Delete
     void deleteMeal(Meal meal);
-
+    @Query("SELECT * FROM meals WHERE id IN (:mealIds)")
+    LiveData<List<Meal>> getMealsByIds(List<Integer> mealIds);
     @Query("SELECT * FROM meals")
     LiveData<List<Meal>> getAllMeals();
 

@@ -1,6 +1,5 @@
 package com.example.proxyaisuggestions.data.models;
 
-import androidx.annotation.Nullable;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
@@ -24,12 +23,13 @@ public class Meal {
 
     private String description;
 
-    @Nullable
     private String imageUrl;
 
     private int categoryId;
 
-    public Meal(String name, double price, String description, @Nullable String imageUrl, int categoryId) {
+    private int count = 0; // Added count field for quantity tracking
+
+    public Meal(String name, double price, String description, String imageUrl, int categoryId) {
         this.name = name;
         this.price = price;
         this.description = description;
@@ -73,13 +73,11 @@ public class Meal {
         this.description = description;
     }
 
-    // Getter and setter for imageUrl
-    @Nullable
     public String getImageUrl() {
         return imageUrl;
     }
 
-    public void setImageUrl(@Nullable String imageUrl) {
+    public void setImageUrl( String imageUrl) {
         this.imageUrl = imageUrl;
     }
 
@@ -90,5 +88,14 @@ public class Meal {
 
     public void setCategoryId(int categoryId) {
         this.categoryId = categoryId;
+    }
+
+    // Getter and setter for count
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 }

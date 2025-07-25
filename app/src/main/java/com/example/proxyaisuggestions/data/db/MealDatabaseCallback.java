@@ -50,10 +50,18 @@ public class MealDatabaseCallback extends RoomDatabase.Callback {
 
             // Prepare meals with category IDs from inserted categories
             List<Meal> meals = new ArrayList<>();
-            meals.add(new Meal("Double Whopper", 29.57, "Beef burger", "", categoryIds.get(0).intValue()));
-            meals.add(new Meal("Steakhouse XL", 35.65, "Big beef burger", "", categoryIds.get(0).intValue()));
-            meals.add(new Meal("Chicken Steakhouse", 37.39, "Chicken burger", "", categoryIds.get(1).intValue()));
-            meals.add(new Meal("Quattro Cheese Grill", 29.57, "Cheesy chicken", "", categoryIds.get(2).intValue()));
+            meals.add(new Meal("Double Whopper", 29.57, "Beef burger", "https://th.bing.com/th/id/R.94b70e56383b63fcab90b82d627c4c58?rik=iOfMZGbvGX%2bRxw&pid=ImgRaw&r=0", categoryIds.get(0).intValue()));
+            meals.add(new Meal("Steakhouse XL", 35.65, "Big beef burger", "https://th.bing.com/th/id/R.94b70e56383b63fcab90b82d627c4c58?rik=iOfMZGbvGX%2bRxw&pid=ImgRaw&r=0", categoryIds.get(0).intValue()));
+            meals.add(new Meal("Chicken Steakhouse", 37.39, "Chicken burger", "https://th.bing.com/th/id/R.94b70e56383b63fcab90b82d627c4c58?rik=iOfMZGbvGX%2bRxw&pid=ImgRaw&r=0", categoryIds.get(1).intValue()));
+            meals.add(new Meal("Quattro Cheese Grill", 29.57, "Cheesy chicken", "https://th.bing.com/th/id/R.94b70e56383b63fcab90b82d627c4c58?rik=iOfMZGbvGX%2bRxw&pid=ImgRaw&r=0", categoryIds.get(2).intValue()));
+            meals.add(new Meal("Double Whopper", 29.57, "Beef burger", "https://th.bing.com/th/id/R.94b70e56383b63fcab90b82d627c4c58?rik=iOfMZGbvGX%2bRxw&pid=ImgRaw&r=0", categoryIds.get(0).intValue()));
+            meals.add(new Meal("Steakhouse XL", 35.65, "Big beef burger", "https://th.bing.com/th/id/R.94b70e56383b63fcab90b82d627c4c58?rik=iOfMZGbvGX%2bRxw&pid=ImgRaw&r=0", categoryIds.get(0).intValue()));
+            meals.add(new Meal("Chicken Steakhouse", 37.39, "Chicken burger", "https://th.bing.com/th/id/R.94b70e56383b63fcab90b82d627c4c58?rik=iOfMZGbvGX%2bRxw&pid=ImgRaw&r=0", categoryIds.get(1).intValue()));
+            meals.add(new Meal("Quattro Cheese Grill", 29.57, "Cheesy chicken", "https://th.bing.com/th/id/R.94b70e56383b63fcab90b82d627c4c58?rik=iOfMZGbvGX%2bRxw&pid=ImgRaw&r=0", categoryIds.get(2).intValue()));
+            meals.add(new Meal("Double Whopper", 29.57, "Beef burger", "https://th.bing.com/th/id/R.94b70e56383b63fcab90b82d627c4c58?rik=iOfMZGbvGX%2bRxw&pid=ImgRaw&r=0", categoryIds.get(0).intValue()));
+            meals.add(new Meal("Steakhouse XL", 35.65, "Big beef burger", "https://th.bing.com/th/id/R.94b70e56383b63fcab90b82d627c4c58?rik=iOfMZGbvGX%2bRxw&pid=ImgRaw&r=0", categoryIds.get(0).intValue()));
+            meals.add(new Meal("Chicken Steakhouse", 37.39, "Chicken burger", "https://th.bing.com/th/id/R.94b70e56383b63fcab90b82d627c4c58?rik=iOfMZGbvGX%2bRxw&pid=ImgRaw&r=0", categoryIds.get(1).intValue()));
+            meals.add(new Meal("Quattro Cheese Grill", 29.57, "Cheesy chicken", "https://th.bing.com/th/id/R.94b70e56383b63fcab90b82d627c4c58?rik=iOfMZGbvGX%2bRxw&pid=ImgRaw&r=0", categoryIds.get(2).intValue()));
 
             mealDao.insertMeals(meals);
         });
